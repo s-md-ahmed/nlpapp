@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    margin: 20px auto;
+    width: 50%;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: rgb(42, 216, 202);
+}
+
+.report {
+    margin-top: 30px;
+    text-align: left;
+    width: 60%;
+    margin: 30px auto;
+}
+
+pre {
+    background: #04070a;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+#title{
+    background-color: black;
+    color: turquoise;
+}
+#body{
+    background-color: black;
+}
