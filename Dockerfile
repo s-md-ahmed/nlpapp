@@ -2,16 +2,17 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Install system dependencies and ensure setuptools/wheel are ready
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Upgrade pip and install setuptools to provide pkg_resources support
+# Upgrade pip, setuptools, and wheel globally first
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+
+# Tell pip to install without build isolation so it uses our global setuptools!
+RUN pip install --no-cache-dir --no-build-isolation -r requirements.txt
 
 COPY . .
 
