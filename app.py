@@ -45,6 +45,7 @@ def predict():
     vectorized_text = tfidf.transform([cleaned_text])
     prediction = model.predict(vectorized_text)[0]
     result = "Disaster" if prediction == 1 else "Not Disaster"
+    return jsonify({"result": result})
 
     
 
