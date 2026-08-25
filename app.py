@@ -46,14 +46,7 @@ def predict():
     prediction = model.predict(vectorized_text)[0]
     result = "Disaster" if prediction == 1 else "Not Disaster"
 
-    # Return prediction and classification reports
-    return jsonify(
-        {
-            "result": result,
-            "train_report": train_report_text,
-            "test_report": test_report_text,
-        }
-    )
+    
 
 
 if __name__ == "__main__":
