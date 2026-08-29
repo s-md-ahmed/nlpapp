@@ -1,4 +1,4 @@
-# Disaster Message Classifier 🚨
+# Disaster Message Classifier 
 
 A lightweight Natural Language Processing (NLP) web application built with **Flask** and **Scikit-Learn** that classifies whether a given text message refers to a disaster or not.
 
