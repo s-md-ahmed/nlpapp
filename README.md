@@ -15,7 +15,8 @@ This project represents an important foundational phase in my engineering journe
 The application ingests raw user text through an asynchronous frontend fetch loop, normalizes the text string, applies TF-IDF feature extraction, and feeds the vectorized data into a trained classification model to categorize alerts in real time.
 
 ### Pipeline Architecture Diagram
-[![Architecture diagram](https://gitdiagram.com/diagram-badge.svg)](https://gitdiagram.com/s-md-ahmed/nlpapp?utm_source=readme&utm_medium=badge)
+<img width="3613" height="6685" alt="diagram (8)" src="https://github.com/user-attachments/assets/acdb7cc4-70de-4718-91c1-21c2abe6c249" />
+
 ---
 
 ## Why This Architecture? (Design Decisions & Trade-offs)
